@@ -1,0 +1,16 @@
+{
+  "name": "aws-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@semaphore-protocol/group": "^2.6.1",
+    "@semaphore-protocol/identity": "^2.6.1",
+    "@semaphore-protocol/proof": "^2.6.1"
+  }
+}
