@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@aws-sdk/client-dynamodb": "^3.238.0",
+    "@aws-sdk/lib-dynamodb": "^3.238.0",
     "@semaphore-protocol/group": "^2.6.1",
     "@semaphore-protocol/identity": "^2.6.1",
     "@semaphore-protocol/proof": "^2.6.1"
