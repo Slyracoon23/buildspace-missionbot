@@ -32,15 +32,23 @@ async function generateMissionBotProof(attestation) {
   return fullProof;
 }
 
-// generateMissionBotProof("attestation");
 exports.handler = async (event) => {
-  const attestation = event.attestation;
+  const body = JSON.parse(event.body);
+  const attestation = body.attestation;
+
+  if (!attestation) {
+    const response = {
+      statusCode: 400,
+      body: "No attestation provided",
+    };
+    return response;
+  }
 
   const proof = await generateMissionBotProof(attestation);
 
   const response = {
     statusCode: 200,
-    body: proof,
+    body: JSON.stringify(proof),
   };
   return response;
 };
